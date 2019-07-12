@@ -306,7 +306,7 @@ function show(check){
   										});
 						}
 						
-            			document.getElementById("write1").innerHTML = '<strong>Onput Image(Dilation Operation performed)</strong>';
+            			document.getElementById("write1").innerHTML = '<strong>Output Image(Dilation Operation performed)</strong>';
 					}else if(y===2){
 								if(z===1){
 											var imgElement =document.getElementById("imageSrc");
@@ -392,7 +392,7 @@ function show(check){
 								},1000);
   										});
 								}
-						document.getElementById("write1").innerHTML = '<strong>Onput Image(Erosion Operation performed)</strong>';
+						document.getElementById("write1").innerHTML = '<strong>Output Image(Erosion Operation performed)</strong>';
 					}else if(y===3){
 								if(z===1){
 									var imgElement =document.getElementById("imageSrc");
@@ -479,7 +479,7 @@ function show(check){
   										});
 									
 								}
-						document.getElementById("write1").innerHTML = '<strong>Onput Image(Closing Operation performed)</strong>';
+						document.getElementById("write1").innerHTML = '<strong>Output Image(Closing Operation performed)</strong>';
 					}else if(y===4){
 								if(z===1){
 									var imgElement =document.getElementById("imageSrc");
@@ -569,7 +569,7 @@ function show(check){
   										});
 									
 								}
-						document.getElementById("write1").innerHTML = '<strong>Onput Image(Opening Operation performed)</strong>';
+						document.getElementById("write1").innerHTML = '<strong>Output Image(Opening Operation performed)</strong>';
 					}	
 					Array.prototype.forEach.call(radios2, function(radio) {
    					radio.addEventListener('change', changeHandler2);
