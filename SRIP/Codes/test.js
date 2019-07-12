@@ -46,6 +46,7 @@ function im(check){
 		name="ed";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		flag=1;
 	}
 	if(check===2){
@@ -53,6 +54,7 @@ function im(check){
 		name="ed1";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		flag=1;
 	}
 	if(check===3){
@@ -60,6 +62,7 @@ function im(check){
 		name="ed2";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		flag=1;
 	}
 	if(check===4){
@@ -67,6 +70,7 @@ function im(check){
 		name="ed3";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		flag=1;
 	}
 	if(check===5){
@@ -74,6 +78,7 @@ function im(check){
 		name="ed4";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		flag=1;
 	}
 	if(check===6){
@@ -81,6 +86,7 @@ function im(check){
 		name="ed5";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		flag=1;
 	}
 	if(check===7){
@@ -88,6 +94,7 @@ function im(check){
 		name="ed6";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		flag=1;
 	}
 	if(check===8){
@@ -95,6 +102,7 @@ function im(check){
 		name="ed7";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		flag=1;
 	}
 	if(check===9){
@@ -102,73 +110,78 @@ function im(check){
 		name="ed8";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		flag=1;
 	}
 }
 else{
 	document.getElementById(name1).style.borderColor ="";
+
 	if(check===1){
 		count=1;
 		name="ed";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
-		flag=1;
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 	}
 	if(check===2){
 		count=2;
 		name="ed1";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
-		flag=1;
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 	}
 	if(check===3){
 		count=3;
 		name="ed2";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
-		flag=1;
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 	}
 	if(check===4){
 		count=4;
 		name="ed3";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
-		flag=1;
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 	}
 	if(check===5){
 		count=5;
 		name="ed4";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
-		flag=1;
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 	}
 	if(check===6){
 		count=6;
 		name="ed5";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
-		flag=1;
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
 	}
 	if(check===7){
 		count=7;
 		name="ed6";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
-		flag=1;
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		
 	}
 	if(check===8){
 		count=8;
 		name="ed7";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
-		flag=1;
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		
 	}
 	if(check===9){
 		count=9;
 		name="ed8";
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
-		flag=1;
+		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		
 	}
 }
 }
@@ -194,6 +207,7 @@ function show(check){
 	
 	if(count!=0){
 		check=name;
+		document.getElementById("imageSrc").style.marginTop = "0%";
 	if(y===0){
   				alert('Please select the operation');
   				changeHandler(event);
@@ -214,7 +228,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  							var ctx =c.getContext("2d");
  							var img = document.getElementById("imageSrc");
- 							ctx.drawImage(img,40,40);
+ 							ctx.drawImage(img,0,0);
     						c.toBlob(function(blob) {
   										
     						 imgElement.src = URL.createObjectURL(blob);
@@ -242,7 +256,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -269,7 +283,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -301,7 +315,7 @@ function show(check){
 									var c= document.getElementById("canvasInput");
  													var ctx =c.getContext("2d");
  											var img = document.getElementById("imageSrc");
- 											ctx.drawImage(img,40,40);
+ 											ctx.drawImage(img,0,0);
     										    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -329,7 +343,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -356,7 +370,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -387,7 +401,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -415,7 +429,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -442,7 +456,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -474,7 +488,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -503,7 +517,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
@@ -531,7 +545,7 @@ function show(check){
 							var c= document.getElementById("canvasInput");
  									var ctx =c.getContext("2d");
  									var img = document.getElementById("imageSrc");
- 									ctx.drawImage(img,40,40);
+ 									ctx.drawImage(img,0,0);
     								    c.toBlob(function(blob) {
   										
   										//let imgElement = document.getElementById(check);
