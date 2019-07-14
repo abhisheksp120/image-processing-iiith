@@ -41,3 +41,5 @@ The experiment is designed to understand and learn the morphological operations 
 	
 * Interesting Observations -
     1. Select different size of structuring elements and observe the change in final output.
+
+## [Project Documentation](https://gist.github.com/abhisheksp120/2580aa5ec876c9d7e6dcb9cd779c9930)
