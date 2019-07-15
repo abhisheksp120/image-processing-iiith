@@ -34,6 +34,7 @@
 #div2{
   border-style: solid; 
   color:  #F5F5F5 ;
+  margin: auto;
 }
 #myBtn{
   margin-top: 5%;
@@ -52,16 +53,17 @@
    border-radius: 5px;
 }
 #div3{
-  border-style: dashed; 
+  border-style: solid; 
   color: #F5F5F5 ;
-    margin-top: 4%;
     padding-bottom: 5%;
+    margin: auto;
+    width: 85%;
 }
 #div4{
-  border-style: dashed; 
+  border-style: solid; 
   float: left;
   margin-top: 12%;
-  margin-left: 10%;
+  margin-left: 13%;
    width: 225px;
     height: 225px;
       overflow: hidden;
@@ -69,13 +71,13 @@
        
 }
 #div5{
-  border-style: dashed;
+  border-style: solid;
    float: right;
   margin-top: 12%;
   width: 224px;
   height: 224px;
   overflow: hidden;
-  margin-right: 10%;
+  margin-right: 13%;
  
 }
 #new{
@@ -112,10 +114,11 @@
    text-align: center;
 }
 .flex-item{
+  
    margin-left: -3%;
    width: 70%;
    margin-right: 10%;
-   margin-bottom: 1%;
+   margin-bottom: auto;
    height: 470px;
 
 }
@@ -124,7 +127,6 @@
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -133,19 +135,7 @@
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-}
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
+  margin-bottom: 6%;
 }
 .button1 {
   background-color: white; 
