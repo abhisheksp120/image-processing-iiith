@@ -48,6 +48,7 @@ function im(check){
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		flag=1;
 	}
 	if(check===2){
@@ -57,6 +58,7 @@ function im(check){
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		flag=1;
 	}
 	if(check===3){
@@ -66,6 +68,7 @@ function im(check){
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		flag=1;
 	}
 	if(check===4){
@@ -75,6 +78,7 @@ function im(check){
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		flag=1;
 	}
 	if(check===5){
@@ -84,6 +88,7 @@ function im(check){
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		flag=1;
 	}
 	if(check===6){
@@ -93,6 +98,7 @@ function im(check){
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		flag=1;
 	}
 	if(check===7){
@@ -102,6 +108,7 @@ function im(check){
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		flag=1;
 	}
 	if(check===8){
@@ -111,6 +118,7 @@ function im(check){
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		flag=1;
 	}
 	if(check===9){
@@ -120,6 +128,7 @@ function im(check){
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		flag=1;
 	}
 }
@@ -133,6 +142,7 @@ else{
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 	}
 	if(check===2){
 		count=2;
@@ -141,6 +151,7 @@ else{
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 	}
 	if(check===3){
 		count=3;
@@ -149,6 +160,7 @@ else{
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 	}
 	if(check===4){
 		count=4;
@@ -157,6 +169,7 @@ else{
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 	}
 	if(check===5){
 		count=5;
@@ -165,6 +178,7 @@ else{
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 	}
 	if(check===6){
 		count=6;
@@ -173,6 +187,7 @@ else{
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 	}
 	if(check===7){
 		count=7;
@@ -181,6 +196,7 @@ else{
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		
 	}
 	if(check===8){
@@ -190,6 +206,7 @@ else{
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		
 	}
 	if(check===9){
@@ -199,6 +216,7 @@ else{
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
 		document.getElementById("canvasOutput").style.display="none";
+		document.getElementById("write1").innerHTML = '<strong>Output Image</strong>';
 		
 	}
 }
@@ -324,7 +342,7 @@ function show(check){
   										});
 						}
 						
-            			document.getElementById("write1").innerHTML = '<strong>Output Image(Dilation Operation performed)</strong>';
+            			document.getElementById("write1").innerHTML = '<strong>Output Image(Dilation)</strong>';
 					}else if(y===2){
 								if(z===1){
 											var imgElement =document.getElementById("imageSrc");
@@ -410,7 +428,7 @@ function show(check){
 								},1000);
   										});
 								}
-						document.getElementById("write1").innerHTML = '<strong>Output Image(Erosion Operation performed)</strong>';
+						document.getElementById("write1").innerHTML = '<strong>Output Image(Erosion)</strong>';
 					}else if(y===3){
 								if(z===1){
 									var imgElement =document.getElementById("imageSrc");
@@ -497,7 +515,7 @@ function show(check){
   										});
 									
 								}
-						document.getElementById("write1").innerHTML = '<strong>Output Image(Closing Operation performed)</strong>';
+						document.getElementById("write1").innerHTML = '<strong>Output Image(Closing)</strong>';
 					}else if(y===4){
 								if(z===1){
 									var imgElement =document.getElementById("imageSrc");
@@ -587,7 +605,7 @@ function show(check){
   										});
 									
 								}
-						document.getElementById("write1").innerHTML = '<strong>Output Image(Opening Operation performed)</strong>';
+						document.getElementById("write1").innerHTML = '<strong>Output Image(Opening)</strong>';
 					}	
 					Array.prototype.forEach.call(radios2, function(radio) {
    					radio.addEventListener('change', changeHandler2);
