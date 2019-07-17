@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link type='text/css' rel='stylesheet' href='1.css'/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<body >
+		<div id="container-fluid" >
+			<div style=" border-style: solid;border-width: 2px; width: 90%; margin-left: 5%; margin-top: 5%; padding-top: 2%;  margin-bottom: 5%; font-size: 30px;">
+				<h ><strong style="margin-left: 41%;" >Quiz Instructions</strong></h>
+				<div class="row">
+					<p style=" float: left; font-size: 18px;  margin-left: 8%;">Max Marks : 30 </p>
+					<p style="float: right; font-size: 18px; margin-right: 8%;">Max Time : 10 min</p>
+				</div>
+				
+				<hr style="border-style: solid; border-color: black; width: 90%; margin-left: 5%;" >
+				<ul>
+						<li>
+							<ol>
+								<li>
+									<p><strong>Please read the following instruction very carefully.</strong> </p>
+								</li>
+								<li>
+									<p>The following Quiz is based on the concept of<strong> Morphological Operations</strong>.</p>
+								</li>
+								<li>
+									<p>Quiz contain 30 MCQ type questions.</p>
+								</li>
+								<li>
+									<p>The maximum marks for the quiz is 30 (i.e 1 marks for each correct answer), Also the maximunm time alloted for the quiz is 10 min. </p>
+								</li>
+									<li>
+									<p>After clicking the start test button you will be proceeded towards the quiz and the timer countdown will be started.</p>
+									<ol>
+										<li>
+											<p> After the start of quiz on your left side there will be a question tabs. From there you can proceed toward any question.</p>
+										</li>
+										<li>
+											<p>On botton you will find Next, skip, Submit, and Prev buttons.</p>
+										</li>
+										<li>
+											<p><strong>For answering a question you must select the appropiate option and press next or prev button to confirm the selection.</strong></p>
+										</li>
+										<li>
+											<p>You can skip any question by pressing the skip button. Also can proceed to previous question by pressing the prev button. </p>
+										</li>
+										<li>
+											<p>If you done with the quiz before the alloted time, Then you can <strong>submit your responses by pressing the submit button.</strong></p>
+										</li>
+										<li>
+											<p>As the quiz endes you will be given the result of the quiz. If you want to give the quiz again just press the start over button.</p> 
+										</li>
+									</ol>
+									</li>
+								<li>
+									<p>Color of the question tabs :</p>
+									<ol>
+										<li>
+											<p><strong>Yellow color</strong> - Tells that which questions you have visited or skipped.</p>
+										</li>
+										<li>
+											<p><strong>Green color</strong> - The questions attempted by you.</p>
+										</li>
+										<li>
+											<p><strong>White color</strong> - Unvisited questions.</p>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<p>
+										Now you can proceed toward quiz(By clicking the start test button).
+									</p>
+								</li>
+								<p style="text-align: center; font-size: 20px;"><strong>All The Best !</strong></p>
+							</ol>
+						</li>
+					</ul>
+					<hr style="margin-bottom: 10%;">
+					<button class="button" id="b1" onclick="countdown();" style="font-size: 18px;" >Start Test</button>			
+			</div>
+		</div>
+		<div id='container' >
+			<div>
+				<h1><strong>Quiz : MORPHOLOGICAL OPERATIONS</strong></h1>
+				<hr>
+				<h3 id="head">Result</h3>
+			</div>
+			<div id="timer" style="margin-left: 85%; pointer-events: none;">
+				 Time Left : 
+       			 <input id="minutes" type="text" style="width: 15%; 
+           		  border: none; font-size: 16px;  
+           			 font-weight: bold; color: black;"><font size="5"> : 
+                 		       </font> 
+       			 <input id="seconds" type="text" style="width: 15%; 
+                        border: none; font-size: 16px; 
+                        font-weight: bold; color: black;"> 
+			</div>
+   			<br/>
+   			
+   			<div id="q1" style=" padding:5px; border-style: solid ; border-color: black; background-color: #DCDCDC; border-radius: 5px; width: 23%; margin-top: 1px; display: block;">
+   				<h4 style="text-align:  center; color: black; "><b> Questions Tab</b></h4>
+   				<hr>
+    				<div style="text-align: center; margin-bottom: 2%;">
+    					<button type="button" class="btn btn-default btn-circle" id="1" onclick="tab(1)">1</button>
+    					<button type="button" class="btn btn-default btn-circle" id="2" onclick="tab(2)">2</button>
+    					<button type="button" class="btn btn-default btn-circle" id="3" onclick="tab(3)">3</button>
+    					<button type="button" class="btn btn-default btn-circle" id="4" onclick="tab(4)">4</button>
+    					<button type="button" class="btn btn-default btn-circle" id="5" onclick="tab(5)">5</button>
+    					<hr>
+    					<button type="button" class="btn btn-default btn-circle" id="6" onclick="tab(6)">6</button>
+    					<button type="button" class="btn btn-default btn-circle" id="7" onclick="tab(7)">7</button>
+    					<button type="button" class="btn btn-default btn-circle" id="8" onclick="tab(8)">8</button>
+    					<button type="button" class="btn btn-default btn-circle" id="9" onclick="tab(9)">9</button>
+    					<button type="button" class="btn btn-default btn-circle" id="10" onclick="tab(10)">10</button>
+    					<hr>
+    					<button type="button" class="btn btn-default btn-circle" id="11" onclick="tab(11)">11</button>
+    					<button type="button" class="btn btn-default btn-circle" id="12" onclick="tab(12)">12</button>
+    					<button type="button" class="btn btn-default btn-circle" id="13" onclick="tab(13)">13</button>
+    					<button type="button" class="btn btn-default btn-circle" id="14" onclick="tab(14)">14</button>
+    					<button type="button" class="btn btn-default btn-circle" id="15" onclick="tab(15)">15</button>
+    					<hr>
+    					<button type="button" class="btn btn-default btn-circle" id="16" onclick="tab(16)">16</button>
+    					<button type="button" class="btn btn-default btn-circle" id="17" onclick="tab(17)">17</button>
+    					<button type="button" class="btn btn-default btn-circle" id="18" onclick="tab(18)">18</button>
+    					<button type="button" class="btn btn-default btn-circle" id="19" onclick="tab(19)">19</button>
+    					<button type="button" class="btn btn-default btn-circle" id="20" onclick="tab(20)">20</button>
+    					<hr>
+    					<button type="button" class="btn btn-default btn-circle" id="21" onclick="tab(21)">21</button>
+    					<button type="button" class="btn btn-default btn-circle" id="22" onclick="tab(22)">22</button>
+    					<button type="button" class="btn btn-default btn-circle" id="23" onclick="tab(23)">23</button>
+    					<button type="button" class="btn btn-default btn-circle" id="24" onclick="tab(24)">24</button>
+    					<button type="button" class="btn btn-default btn-circle" id="25" onclick="tab(25)">25</button>
+    					<hr>
+    					<button type="button" class="btn btn-default btn-circle" id="26" onclick="tab(26)">26</button>
+    					<button type="button" class="btn btn-default btn-circle" id="27" onclick="tab(27)">27</button>
+    					<button type="button" class="btn btn-default btn-circle" id="28" onclick="tab(28)">28</button>
+    					<button type="button" class="btn btn-default btn-circle" id="29" onclick="tab(29)">29</button>
+    					<button type="button" class="btn btn-default btn-circle" id="30" onclick="tab(30)">30</button>
+    				
+    				</div>
+
+    		</div>
+  			<div id='quiz' ></div>
+  			<div id="res" ></div>
+    		<div class='button ' id='next' style="margin-top: -5%;"><a href='#'>Next</a></div>
+    		<div class='button' id="skip" style="margin-top: -5%; margin-right: 12%;"><a href='#'>Skip</a></div>
+    		<div class='button' id='prev' style="margin-top: -5%; margin-right: 24%;"><a href='#'>Prev</a></div>
+    		<div class='button v1' id='Sub'><a href='#'>Submit</a></div>
+    		<div class='button' id='start' onClick="refreshPage()"> <a href='#'>Start Over</a></div>
+
+    		<button class='' id='prev'>Prev</a></button>
+    		<button class='' id='start'> Start Over</a></button> 
+    		
+
+    	</div>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type="text/javascript" src='questions.json'></script>
+		<script type="text/javascript" src="3.js"></script>
+		<script type="text/javascript" src="2.js"></script>
+		<script type='text/javascript' src='1.js'></script>
+	</body>
+</html>
