@@ -47,6 +47,7 @@ function im(check){
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		flag=1;
 	}
 	if(check===2){
@@ -55,6 +56,7 @@ function im(check){
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		flag=1;
 	}
 	if(check===3){
@@ -63,6 +65,7 @@ function im(check){
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		flag=1;
 	}
 	if(check===4){
@@ -71,6 +74,7 @@ function im(check){
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		flag=1;
 	}
 	if(check===5){
@@ -79,6 +83,7 @@ function im(check){
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		flag=1;
 	}
 	if(check===6){
@@ -87,6 +92,7 @@ function im(check){
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		flag=1;
 	}
 	if(check===7){
@@ -95,6 +101,7 @@ function im(check){
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		flag=1;
 	}
 	if(check===8){
@@ -103,6 +110,7 @@ function im(check){
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		flag=1;
 	}
 	if(check===9){
@@ -111,6 +119,7 @@ function im(check){
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		flag=1;
 	}
 }
@@ -123,6 +132,7 @@ else{
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 	}
 	if(check===2){
 		count=2;
@@ -130,6 +140,7 @@ else{
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 	}
 	if(check===3){
 		count=3;
@@ -137,6 +148,7 @@ else{
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 	}
 	if(check===4){
 		count=4;
@@ -144,6 +156,7 @@ else{
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 	}
 	if(check===5){
 		count=5;
@@ -151,6 +164,7 @@ else{
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 	}
 	if(check===6){
 		count=6;
@@ -158,6 +172,7 @@ else{
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 	}
 	if(check===7){
 		count=7;
@@ -165,6 +180,7 @@ else{
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		
 	}
 	if(check===8){
@@ -173,6 +189,7 @@ else{
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		
 	}
 	if(check===9){
@@ -181,6 +198,7 @@ else{
 		name1=name;
 		document.getElementById(name).style.borderColor = "blue";
 		document.getElementById("imageSrc").src= document.getElementById(name).src;
+		document.getElementById("canvasOutput").style.display="none";
 		
 	}
 }
@@ -577,7 +595,9 @@ function show(check){
   				}
   			}
   			}
+  			setTimeout(()=>{
 	document.getElementById('canvasOutput').style.display = "inline";
+},1020);
 }else{
 	alert('Please Select a image by clicking on it');
 }

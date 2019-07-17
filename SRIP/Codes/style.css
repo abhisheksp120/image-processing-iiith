@@ -27,7 +27,7 @@
 #p1{
   color:  #F5F5F5 ;
    text-align: center;
-    margin-top: -6%;
+    margin-top: auto;
      margin-bottom: 2%;
      margin-left: 2%;
 }
@@ -431,7 +431,7 @@ li{
   }
 .img_grid{
     
-    width: 100%;
+    width: 330px;
 
     border-style: solid;
     border-color: white;
@@ -466,12 +466,25 @@ li{
   border-style: solid;  
   border-color:;
 }
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1100px) {
   .img_grid{
-    overflow: auto;
+    overflow: none;
 
   }
   .item{
     width: 110px;
+  }
+  .container{
+    display: block;
+  }
+  .flex-item{
+   margin: auto;
+   margin-bottom: 2%;
+  }
+  .fixed{
+    width: 80%;
+  }
+  .img_grid{
+    margin:auto;
   }
 }
