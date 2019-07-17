@@ -31,11 +31,7 @@
      margin-bottom: 2%;
      margin-left: 2%;
 }
-#div2{
-  border-style: solid; 
-  color:  #F5F5F5 ;
-  margin: auto;
-}
+
 #myBtn{
   margin-top: 5%;
   margin-bottom: -1%;
@@ -62,9 +58,10 @@
 }
 #div4{
   border-style: solid; 
+  border-color: yellow;
   margin: auto;
   margin-top: 12%;
-  margin-left: 13%;
+  margin-left: auto;
 
    width: 225px;
     height: 225px;
@@ -73,13 +70,16 @@
        
 }
 #div5{
+  display: block;
   border-style: solid;
-   
+  border-color: blue;
+   margin: auto;
   margin-top: 12%;
+  margin-right: auto;
   width: 224px;
   height: 224px;
   overflow: hidden;
-  margin-right: 13%;
+  
  
 }
 #new{
@@ -116,12 +116,12 @@
    text-align: center;
 }
 .flex-item{
-  
+  height: 100%;
    margin-left: -3%;
    width: 70%;
    margin-right: 10%;
-   margin-bottom: auto;
-   height: 470px;
+  
+padding-bottom: 10%;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -184,7 +184,8 @@
 }
 
 .container3 {
-	width: 100%;
+
+  margin-left: 5%;
   display: block;
   position: relative;
   margin-bottom: 12px;
@@ -197,7 +198,7 @@
 }
 
 .container1 {
-	width: 100%;
+	 margin-left: 5%;
   display: block;
   position: relative;
   margin-bottom: 12px;
@@ -210,7 +211,8 @@
 }
 
 .container2 {
-	width: 100%;
+	margin-left: 5%;
+
   display: block;
   position: relative;
   margin-bottom: 12px;
@@ -223,6 +225,7 @@
 }
 /* Hide the browser's default checkbox */
 .container3 input {
+
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -249,32 +252,36 @@
 .checkmark3 {
   position: absolute;
   top: 0;
-  left: 20%;
-  height: 25px;
-  width: 25px;
+  left: 15%;
+  margin-right: 25%;
+  height: 110%;
+  width: 10%;
   background-color: #eee;
 }
  
  .checkmark1 {
   position: absolute;
   top: 0;
-  left: 20%;
-  height: 25px;
-  width: 25px;
+  left: 15%;
+  margin-right: 25%;
+  height: 110%;
+  width: 10%;
   background-color: #eee;
 }
 
 .checkmark2 {
-  position: absolute;
+    position: absolute;
   top: 0;
-  left: 20%;
-  height: 25px;
-  width: 25px;
+  left: 15%;
+  margin-right: 25%;
+  height: 110%;
+  width: 10%;
   background-color: #eee;
 }
 /* On mouse-over, add a grey background color */
 .container3:hover input ~ .checkmark3 {
   background-color: #ccc;
+
 }
 
 .container1:hover input ~ .checkmark1 {
@@ -287,6 +294,7 @@
 /* When the checkbox is checked, add a blue background */
 .container3 input:checked ~ .checkmark3 {
   background-color: #2196F3;
+
 }
  
  .container1 input:checked ~ .checkmark1 {
@@ -301,6 +309,7 @@
   content: "";
   position: absolute;
   display: none;
+
 }
 
 .checkmark1:after {
@@ -313,18 +322,28 @@
   content: "";
   position: absolute;
   display: none;
+
 }
 /* Show the checkmark when checked */
 .container3 input:checked ~ .checkmark3:after {
   display: block;
+  width: 15%;
+  position: absolute;
+  left: 35%;
 }
  
 .container1 input:checked ~ .checkmark1:after {
   display: block;
+   width: 15%;
+  position: absolute;
+  left: 35%;
 }
 
 .container2 input:checked ~ .checkmark2:after {
   display: block;
+  width: 15%;
+  position: absolute;
+  left: 35%;
 }
 /* Style the checkmark/indicator */
 .container3 .checkmark3:after {
@@ -407,19 +426,22 @@ li{
 }
 
 #images{
-  margin:auto;
-}
+  width: 100%;
+ 
+  }
 .img_grid{
-    padding-top: 1%;
-    width:330px;
-    height: 329px;
-   
+  
+    width:102%;
+    border-style: solid;
+    border-color: white;
+    height: 315px;
+  
 }
 .item {
-   
-    width: 110px;
+  
+    width: 105px;
     float: left;
-    height: 110px;
+    height: 105px;
 }
 .item img {
    
@@ -442,4 +464,9 @@ li{
 .imgpro{
   border-style: solid;  
   border-color:;
+}
+@media only screen and (max-width: 1360px) {
+  .img_grid{
+    overflow: auto;
+  }
 }
